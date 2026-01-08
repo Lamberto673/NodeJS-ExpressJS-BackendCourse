@@ -23,9 +23,9 @@ app.use("/auth", authRoutes);
 app.use("/watchlist", watchlistRoutes);
 
 
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 
-const server = app.listen(process.env.PORT || 5001, "0.0.0.0", () => {
+const server = app.listen(PORT, "0.0.0.0", () => {
     console.log(`The server is listening at ${PORT}`);
 })
 
